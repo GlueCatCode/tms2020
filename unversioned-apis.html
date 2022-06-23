@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel="stylesheet" />
+
+    <title>MSANose Report</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">𝜇Sensor</a>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            MSA Nose
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="index.html">Overview</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="shared-libraries.html">Shared Libraries</a></li>
+                            <li><a class="dropdown-item" href="unversioned-apis.html">Unversioned API</a></li>
+                            <li><a class="dropdown-item" href="shared-persistence.html">Shared Persistence</a></li>
+                            <li><a class="dropdown-item" href="inappropriate-service-intimacy.html">Inappropriate Service Intimacy (ISI)</a></li>
+                            <li><a class="dropdown-item" href="hardcoded-endpoints.html">Hardcoded Endpoints</a></li>
+                            <li><a class="dropdown-item" href="esb.html">Enterprise Service Bus Usage (ESB)</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="p-5 mb-5">
+        <div class="bd-intro">
+            <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between">
+                <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="https://github.com/microsensorproject/microsensor" title="View and edit this file on GitHub" target="_blank" rel="noopener">View More on GitHub</a>
+                <h2 class="bd-title" id="content">Unversioned APIs</h2>
+            </div>
+            <p class="bd-lead">All Application Programming Interfaces (API) should be versioned to keep track of changes properly</p>
+        </div>
+        <hr/>
+
+        <section>
+            <div class="row">
+                <table class="table table-striped table-hover">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Endpoint</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td>1</td>
+                            <td>/all</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>/question/export/{questionId}</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>/category/export</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>/question</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>/userinfo/usernames</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>/userinfo/updateUser</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>/usernames</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>/test</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>/question/checkSyntax</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>/userinfo/addUser</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>/userinfo/userById/{id}</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>/exam/{email}</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>/addUser</td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>/question/all</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>/userinfo/changePassword/{id}</td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>/deleteUserByUsername/{username}</td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>/categoryinfo</td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>/language/{languageId}</td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>/{categoryId}</td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>/usernamesLike</td>
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>/configuration/{configurationId}</td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>/userById/{id}</td>
+                        </tr>
+                        <tr>
+                            <td>23</td>
+                            <td>categoryInfo</td>
+                        </tr>
+                        <tr>
+                            <td>24</td>
+                            <td>/deleteUser/{id}</td>
+                        </tr>
+                        <tr>
+                            <td>25</td>
+                            <td>/{questionId}</td>
+                        </tr>
+                        <tr>
+                            <td>26</td>
+                            <td>/question/{questionId}</td>
+                        </tr>
+                        <tr>
+                            <td>27</td>
+                            <td>/userIdByUsername/{username}</td>
+                        </tr>
+                        <tr>
+                            <td>28</td>
+                            <td>/userByUsername/{username}</td>
+                        </tr>
+                        <tr>
+                            <td>29</td>
+                            <td>/userinfo/validId/{id}</td>
+                        </tr>
+                        <tr>
+                            <td>30</td>
+                            <td>/userinfo/users</td>
+                        </tr>
+                        <tr>
+                            <td>31</td>
+                            <td>/category</td>
+                        </tr>
+                        <tr>
+                            <td>32</td>
+                            <td>/addUserRoles/{username}</td>
+                        </tr>
+                        <tr>
+                            <td>33</td>
+                            <td>/create</td>
+                        </tr>
+                        <tr>
+                            <td>34</td>
+                            <td>/userinfo/addUsers</td>
+                        </tr>
+                        <tr>
+                            <td>35</td>
+                            <td>/userinfo/deleteUser/{id}</td>
+                        </tr>
+                        <tr>
+                            <td>36</td>
+                            <td>/question/exportFiltered</td>
+                        </tr>
+                        <tr>
+                            <td>37</td>
+                            <td>configuration</td>
+                        </tr>
+                        <tr>
+                            <td>38</td>
+                            <td>/userinfo/usernamesLike</td>
+                        </tr>
+                        <tr>
+                            <td>39</td>
+                            <td>/userinfo/userRoles/{username}</td>
+                        </tr>
+                        <tr>
+                            <td>40</td>
+                            <td>/configuration</td>
+                        </tr>
+                        <tr>
+                            <td>41</td>
+                            <td>/{languageId}</td>
+                        </tr>
+                        <tr>
+                            <td>42</td>
+                            <td>/export</td>
+                        </tr>
+                        <tr>
+                            <td>43</td>
+                            <td>/checkSyntax</td>
+                        </tr>
+                        <tr>
+                            <td>44</td>
+                            <td>/addUsers</td>
+                        </tr>
+                        <tr>
+                            <td>45</td>
+                            <td>/category/{categoryId}</td>
+                        </tr>
+                        <tr>
+                            <td>46</td>
+                            <td>/userinfo/userByUsername/{username}</td>
+                        </tr>
+                        <tr>
+                            <td>47</td>
+                            <td>/validId/{id}</td>
+                        </tr>
+                        <tr>
+                            <td>48</td>
+                            <td>/userinfo/userIdByUsername/{username}</td>
+                        </tr>
+                        <tr>
+                            <td>49</td>
+                            <td>/exam/create</td>
+                        </tr>
+                        <tr>
+                            <td>50</td>
+                            <td>/users</td>
+                        </tr>
+                        <tr>
+                            <td>51</td>
+                            <td>/changePassword/{id}</td>
+                        </tr>
+                        <tr>
+                            <td>52</td>
+                            <td>/language</td>
+                        </tr>
+                        <tr>
+                            <td>53</td>
+                            <td>/{configurationId}</td>
+                        </tr>
+                        <tr>
+                            <td>54</td>
+                            <td>/userinfo/addUserRoles/{username}</td>
+                        </tr>
+                        <tr>
+                            <td>55</td>
+                            <td>/userinfo/emailInUse/{email}</td>
+                        </tr>
+                        <tr>
+                            <td>56</td>
+                            <td>/exportFiltered</td>
+                        </tr>
+                        <tr>
+                            <td>57</td>
+                            <td>/{email}</td>
+                        </tr>
+                        <tr>
+                            <td>58</td>
+                            <td>/language/export</td>
+                        </tr>
+                        <tr>
+                            <td>59</td>
+                            <td>/export/{questionId}</td>
+                        </tr>
+                        <tr>
+                            <td>60</td>
+                            <td>/question/export</td>
+                        </tr>
+                        <tr>
+                            <td>61</td>
+                            <td>/emailInUse/{email}</td>
+                        </tr>
+                        <tr>
+                            <td>62</td>
+                            <td>/userinfo/deleteUserByUsername/{username}</td>
+                        </tr>
+                        <tr>
+                            <td>63</td>
+                            <td>configuration/{configurationId}</td>
+                        </tr>
+                        <tr>
+                            <td>64</td>
+                            <td>/userRoles/{username}</td>
+                        </tr>
+                        <tr>
+                            <td>65</td>
+                            <td>/updateUser</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+            </div>
+        </section>
+    </div>
+
+    <div class="px-4">
+        <footer class="pt-5 my-5 text-muted border-top">𝜇Sensor &middot; &copy; 2022</footer>    </div>
+
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js" ></script>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
